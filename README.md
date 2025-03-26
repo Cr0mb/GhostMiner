@@ -1,4 +1,4 @@
-# GhostMiner
+# KTG StealthBot
 
 GhostMiner is a stealthy cryptocurrency miner that operates silently in the background, collecting valuable system information and performing tasks like clipboard monitoring, password extraction, keylogging, and more. It runs the powerful XMRig miner to mine Monero cryptocurrency. With GhostMiner, the system remains undetected while executing its functions, making it an ideal tool for stealthy operations.
 
